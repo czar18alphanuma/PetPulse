@@ -4,182 +4,180 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-    <LinearLayout
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@color/onPrimaryColor">
+
+    <!-- Pet info -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+    <EditText
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" android:background="@color/onPrimaryColor">
+            android:hint="Name"/>
 
-        <!-- Pet info -->
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pet Information"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:paddingTop="8dp"/>
+    <EditText
+            android:id="@+id/editTextGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"/>
 
-        <EditText
-                android:id="@+id/editTextName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"/>
+    <EditText
+            android:id="@+id/editTextBreed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Breed (optional)"/>
 
-        <EditText
-                android:id="@+id/editTextGender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Gender"/>
+    <EditText
+            android:id="@+id/editTextDateOfBirthPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of birth (optional) MM/DD/YYYY"/>
 
-        <EditText
-                android:id="@+id/editTextBreed"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Breed (optional)"/>
+    <EditText
+            android:id="@+id/editTextIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Issue or concern"
+            android:minLines="3"
+            android:inputType="textMultiLine"/>
 
-        <EditText
-                android:id="@+id/editTextDateOfBirthPet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Date of birth (optional) MM/DD/YYYY"/>
+    <EditText
+            android:id="@+id/editTextPreferredVet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preferred veterinarian"/>
 
-        <EditText
-                android:id="@+id/editTextIssue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Issue or concern"
-                android:minLines="3"
-                android:inputType="textMultiLine"/>
+    <EditText
+            android:id="@+id/editTextCurrentMeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Medications Y/N"/>
 
-        <EditText
-                android:id="@+id/editTextPreferredVet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Preferred veterinarian"/>
+    <EditText
+            android:id="@+id/editTextMedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="If yes, please list"/>
 
-        <EditText
-                android:id="@+id/editTextCurrentMeds"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Current Medications Y/N"/>
+    <EditText
+            android:id="@+id/editTextLastCheckup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of last checkup (optional) MM/DD/YYYY"/>
 
-        <EditText
-                android:id="@+id/editTextMedList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="If yes, please list"/>
+    <EditText
+            android:id="@+id/editTextAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies (if any)"/>
 
-        <EditText
-                android:id="@+id/editTextLastCheckup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Date of last checkup (optional) MM/DD/YYYY"/>
+    <EditText
+            android:id="@+id/editTextRequestType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Appointment request type (urgent/non-urgent)"/>
 
-        <EditText
-                android:id="@+id/editTextAllergies"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Allergies (if any)"/>
+    <EditText
+            android:id="@+id/editTextUrgentExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="If urgent, please explain"
+            android:minLines="3"
+            android:inputType="textMultiLine"/>
 
-        <EditText
-                android:id="@+id/editTextRequestType"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Appointment request type (urgent/non-urgent)"/>
+    <!-- Owner info -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
 
-        <EditText
-                android:id="@+id/editTextUrgentExplain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="If urgent, please explain"
-                android:minLines="3"
-                android:inputType="textMultiLine"/>
+    <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"/>
 
-        <!-- Owner info -->
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Owner Information"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:paddingTop="16dp"/>
+    <EditText
+            android:id="@+id/editTextMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"/>
 
-        <EditText
-                android:id="@+id/editTextFirstName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="First name"/>
+    <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last name"/>
 
-        <EditText
-                android:id="@+id/editTextMiddleName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Middle Name"/>
+    <EditText
+            android:id="@+id/editTextDateOfBirthOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of birth: MM/DD/YYYY"/>
 
-        <EditText
-                android:id="@+id/editTextLastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Last name"/>
+    <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"/>
 
-        <EditText
-                android:id="@+id/editTextDateOfBirthOwner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Date of birth: MM/DD/YYYY"/>
+    <EditText
+            android:id="@+id/editTextSecondaryPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Secondary phone (optional)"/>
 
-        <EditText
-                android:id="@+id/editTextPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone"/>
+    <EditText
+            android:id="@+id/editTextPrimaryAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Primary address"/>
 
-        <EditText
-                android:id="@+id/editTextSecondaryPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Secondary phone (optional)"/>
+    <EditText
+            android:id="@+id/editTextSecondaryAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Secondary address (optional)"/>
 
-        <EditText
-                android:id="@+id/editTextPrimaryAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Primary address"/>
+    <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
 
-        <EditText
-                android:id="@+id/editTextSecondaryAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Secondary address (optional)"/>
+    <EditText
+            android:id="@+id/editTextPreferredContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preferred method of contact (Phone/Email)"/>
 
-        <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"/>
+    <Button
+            android:id="@+id/btnGoToFragmentSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
 
-        <EditText
-                android:id="@+id/editTextPreferredContact"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Preferred method of contact (Phone/Email)"/>
-
-        <Button
-                android:id="@+id/btnGoToFragmentSchedule"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:layout_marginTop="16dp"
-                android:layout_gravity="center"/>
-
-        <FrameLayout
-                android:id="@+id/fragment_container2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_centerInParent="true"/>
-    </LinearLayout>
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
+</LinearLayout>
 </ScrollView>
 
